@@ -1,3 +1,5 @@
+repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/rctnz/script/main/bitcoinMiner1.txt"), true))()
+wait(2)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/rctnz/script/main/bitcoinMiner2.txt"), true))()
 
