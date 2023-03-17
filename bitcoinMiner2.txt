@@ -1,0 +1,84 @@
+repeat wait() until game:IsLoaded()
+--auto algorithm
+function alg()
+game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1)
+wait(3)
+a = game:GetService("Players").RachataForSell2.Albnn.value
+print(a)
+wait(1)
+game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(2)
+wait(3)
+b = game:GetService("Players").RachataForSell2.Albnn.value
+print(b)
+wait(1)
+game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(3)
+wait(3)
+c = game:GetService("Players").RachataForSell2.Albnn.value
+print(c)
+wait(1)
+game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(4)
+wait(3)
+d = game:GetService("Players").RachataForSell2.Albnn.value
+print(d)
+     
+if (a>b) then 
+    if (a>c) then 
+        if (a>d) then 
+    game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1)
+    aa = a
+    while wait() do
+        a = game:GetService("Players").RachataForSell2.Albnn.value
+        if (a~=aa) then
+            alg()
+                 end
+             end
+        end
+     end
+end
+     
+if (b>a) then 
+    if (b>c) then 
+        if (b>d) then 
+    game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(2)
+     bb = b
+    while wait() do
+        b = game:GetService("Players").RachataForSell2.Albnn.value
+        if (b~=bb) then
+            alg()
+                 end
+             end
+                 end
+             end
+end
+     
+if (c>a) then 
+    if (c>b) then 
+        if (c>d) then 
+    game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(3)
+     cc = c
+    while wait() do
+        c = game:GetService("Players").RachataForSell2.Albnn.value
+        if (c~=cc) then
+            alg()
+                 end
+             end
+                 end
+             end
+         end     
+
+if (d>a) then 
+    if (d>b) then 
+        if (d>c) then 
+    game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(4)
+     dd = d
+    while wait() do
+        d = game:GetService("Players").RachataForSell2.Albnn.value
+        if (d~=dd) then
+            alg()
+                 end
+             end
+                 end
+             end
+end
+end
+alg()
