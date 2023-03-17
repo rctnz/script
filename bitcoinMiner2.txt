@@ -4,22 +4,23 @@ game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1)
 wait(3)
 a = game:GetService("Players").RachataForSell2.Albnn.value
 print(a)
-wait(1)
+wait(0.5)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(2)
 wait(3)
 b = game:GetService("Players").RachataForSell2.Albnn.value
 print(b)
-wait(1)
+wait(0.5)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(3)
 wait(3)
 c = game:GetService("Players").RachataForSell2.Albnn.value
 print(c)
-wait(1)
+wait(0.5)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(4)
 wait(3)
 d = game:GetService("Players").RachataForSell2.Albnn.value
 print(d)
-     
+wait(0.5)
+
 if (a>b) then 
     if (a>c) then 
         if (a>d) then 
@@ -81,3 +82,4 @@ if (d>a) then
 end
 end
 alg()
+
