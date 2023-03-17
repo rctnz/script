@@ -1,85 +1,72 @@
 --auto algorithm
 function alg()
+   print('return')
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1)
 wait(3)
 a = game:GetService("Players").RachataForSell2.Albnn.value
 print(a)
-wait(0.5)
+
+wait(1)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(2)
 wait(3)
 b = game:GetService("Players").RachataForSell2.Albnn.value
 print(b)
-wait(0.5)
+
+wait(1)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(3)
 wait(3)
 c = game:GetService("Players").RachataForSell2.Albnn.value
 print(c)
-wait(0.5)
+
+wait(1)
 game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(4)
 wait(3)
 d = game:GetService("Players").RachataForSell2.Albnn.value
 print(d)
-wait(0.5)
 
-if (a>b) then 
-    if (a>c) then 
-        if (a>d) then 
+if (a>b and a>c and a>d) then 
     game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1)
     aa = a
-    while wait() do
+    while wait(1) do
         a = game:GetService("Players").RachataForSell2.Albnn.value
         if (a~=aa) then
             alg()
                  end
              end
         end
-     end
-end
      
-if (b>a) then 
-    if (b>c) then 
-        if (b>d) then 
+if (b>a and b>c and b>d)then 
     game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(2)
      bb = b
-    while wait() do
+    while wait(1) do
         b = game:GetService("Players").RachataForSell2.Albnn.value
         if (b~=bb) then
             alg()
                  end
              end
-                 end
-             end
-end
+         end
      
-if (c>a) then 
-    if (c>b) then 
-        if (c>d) then 
+if (c>a and c>b and c>d) then 
     game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(3)
      cc = c
-    while wait() do
+    while wait(1) do
         c = game:GetService("Players").RachataForSell2.Albnn.value
         if (c~=cc) then
             alg()
                  end
              end
-                 end
-             end
-         end     
-
-if (d>a) then 
-    if (d>b) then 
-        if (d>c) then 
+        end
+if (d>a and d>b and d>c) then 
     game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(4)
      dd = d
-    while wait() do
+    while wait(1) do
         d = game:GetService("Players").RachataForSell2.Albnn.value
         if (d~=dd) then
             alg()
                  end
              end
-                 end
-             end
-end
+        end
+
 end
 alg()
 
