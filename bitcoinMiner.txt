@@ -8,14 +8,16 @@ if (game.PlaceId == 2629642516) then
 		VirtualUser:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame);
 	end);
 	while wait() do
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150;
+		Game:GetService("ReplicatedStorage").Events.ClaimFreeBoostStar:FireServer(false)
+		game:GetService("ReplicatedStorage").Events.ActivateOverclock:FireServer(false)
+		Game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("1H Mining Boost")
+		end
+	while wait() do
 		if a then
 			print("AUTO walkSpeed,claimBoost,OC,buy1hMiningBoost success");
 			a = false;
 		end
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150;
-		Game:GetService("ReplicatedStorage").Events.ClaimFreeBoostStar:FireServer(false)
-		game:GetService("ReplicatedStorage").Events.ActivateOverclock:FireServer(false)
-		Game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("1H Mining Boost")
 		alg = function()
 			print("autoAlg success");
 			game:GetService("ReplicatedStorage").Events.AlgoChang:FireServer(1);
