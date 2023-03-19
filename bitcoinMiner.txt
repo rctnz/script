@@ -1,7 +1,12 @@
 if (game.PlaceId == 2629642516) then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rctnz/script/main/otherFunc"))()
+while true do
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+    Game:GetService("ReplicatedStorage").Events.ClaimFreeBoostStar:FireServer(false)
+    game:GetService("ReplicatedStorage").Events.ActivateOverclock:FireServer(false)
+    Game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("1H Mining Boost")
+    wait(5) 
+end
 local player = game.Players.LocalPlayer
-	local a = true
 	while wait() do
 		alg = function()
 			print("autoAlg success")
