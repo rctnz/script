@@ -80,9 +80,6 @@ if (game.PlaceId == 2629642516) then
 			end
 		end;
 		local b = true;
-		if b then
-			print("b true");
-		end
 		while wait() do
 			if b then
 				alg();
